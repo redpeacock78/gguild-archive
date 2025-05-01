@@ -1,0 +1,565 @@
+<title>
+【見たガンダムとか】</title>
+</head>
+<body bgcolor=#000000 text="#CCCCCC" link=#ff0000 alink=#ffffcc vlink=#00ffff>
+<!-- St-HP-H -->
+
+ 
+
+<!-- En-HP-H -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script language="JavaScript">
+<!-- Space Trip 2 - Kurt Grigg - http://website.lineone.net/‾kurt.grigg/javascript
+n4=(document.layers);
+n6=(document.getElementById&&!document.all);
+ie=(document.all);
+
+//Number of stars. Netscape 6 struggles again zzzz......  
+//Slows down even more if scroll bars are visible? Strange Browser.
+n=(n6)?15:20;
+
+d=(n4||ie)?'document.':'document.getElementById("';
+a=(n4||n6)?'':'all.';
+r=(n6)?'")':'';
+s=(n4)?'':'.style';
+
+for (i=0; i < n; i++){
+if (ie||n6)
+document.write('<div id="stars'+i+'" style="position:absolute;width:1px;height:1px;background:#000000;font-size:1px"></div>');
+if (n4)
+document.write("<layer name='stars"+i+"' top=0 left=0 bgcolor=#000000 width=1 height=1></layer>");
+}
+
+var h,w,cy,cx;
+function screenxy(){
+h=(ie)?document.body.clientHeight:window.innerHeight;
+w=(ie)?document.body.clientWidth:window.innerWidth;
+cy=Math.floor((h/2));
+cx=Math.floor((w/2));
+}
+screenxy();
+window.onresize=screenxy;
+
+y=new Array();
+x=new Array();
+iy=new Array();
+ix=new Array();
+dir=new Array();
+v=new Array();
+vr=new Array();
+ds=new Array();
+ex=new Array();
+c=new Array();
+
+//Centre stars only!
+pos=new Array();
+hex=new Array('#000000','#111111','#222222','#333333','#444444','#555555','#666666'
+,'#777777','#888888','#999999','#aaaaaa','#bbbbbb','#cccccc','#dddddd','#eeeeee','#ffffff')
+
+//Initial.
+for (i=0; i < n; i++){
+iy[i]=Math.random()*h;
+ix[i]=Math.random()*w; 
+y[i]=iy[i];
+x[i]=ix[i];
+v[i]=0.3;
+vr[i]=v[i];
+ex[i]=0;
+pos[i]=0;
+c[i]=false;
+}
+
+function fly(){
+sy=(ie)?document.body.scrollTop:window.pageYOffset;
+sx=(ie)?document.body.scrollLeft:window.pageXOffset;
+
+for (i=0; i < n; i++){
+var divs=eval(d+a+"stars"+i+r+s);
+
+//Angle between stars and screen centre.
+ay=y[i]-cy;
+ax=x[i]-cx;
+dir[i]=Math.atan2(ay,ax)*180/Math.PI;
+
+//Distance between stars and screen centre.
+dx=cy-y[i];
+dy=cx-x[i];
+ds[i]=Math.sqrt(dy*dy+dx*dx);
+
+v[i]+=ex[i];
+
+if (ds[i] >= h/4) ex[i]+=0.02;
+if ((ds[i] >= h/20) && (ds[i] < h/4)) ex[i]+=0.04;
+
+//Centre stars only!
+if (ds[i] <= h/20)c[i]=true;
+if (c[i]){
+if (pos[i] < hex.length-1) pos[i]++;
+(!n4)?divs.background=hex[pos[i]]:divs.bgColor=hex[pos[i]];
+if (pos[i] == hex.length-1) ex[i]+=0.5;
+}
+
+
+if (!c[i])
+{
+if (v[i] > 1 && v[i] < 2) (!n4)?divs.background='#333333':divs.bgColor='#333333';
+else if (v[i] >= 2 && v[i] < 3) (!n4)?divs.background='#555555':divs.bgColor='#555555';
+else if (v[i] >= 3 && v[i] < 4) (!n4)?divs.background='#888888':divs.bgColor='#888888';
+else if (v[i] >= 4 && v[i] < 5) (!n4)?divs.background='#aaaaaa':divs.bgColor='#aaaaaa';
+else if (v[i] >= 5 && v[i] < 6) (!n4)?divs.background='#cccccc':divs.bgColor='#cccccc';
+else if (v[i] >= 6 && v[i] < 7) (!n4)?divs.background='#dddddd':divs.bgColor='#dddddd';
+else if (v[i] >= 7 && v[i] < 10) (!n4)?divs.background='#ffffff':divs.bgColor='#ffffff';
+}
+
+if (v[i] > 13){
+ if (!n4){divs.fontSize=2;divs.height=2;divs.width=2;}
+ else{divs.clip.height=2;divs.clip.width=2;}
+}
+
+if (v[i] > 30){
+ if (!n4){divs.fontSize=3;divs.height=3;divs.width=3}
+ else{divs.clip.height=3;divs.clip.width=3}
+}
+
+y[i]+=v[i]*Math.sin(dir[i]*Math.PI/180);
+x[i]+=v[i]*Math.cos(dir[i]*Math.PI/180);
+
+if (y[i] < 0 || y[i] > h-v[i] || x[i] < 0 || x[i] > w-v[i]){ 
+iy[i]=(h/2-cy/2)+Math.random()*cy;
+ix[i]=(w/2-cx/2)+Math.random()*cx;
+y[i]=iy[i];
+x[i]=ix[i];
+v[i]=(ds[i] < 20)?0:0.03;
+ex[i]=0.05;
+pos[i]=0;
+c[i]=false;
+if (!n4){divs.background='#000000';divs.fontSize=1;divs.height=1;divs.width=1} 
+else{divs.bgColor='#000000';divs.clip.height=1;divs.clip.width=1;}
+}
+divs.top=y[i]+sy;
+divs.left=x[i]+sx;
+}
+setTimeout('fly()',10);
+}
+fly();
+// --></script>
+
+
+
+<CENTER>
+<FONT SIZE="5" COLOR="YELLOW">ガンダムとか富野作品などの個人的感想を自己紹介に代えて。</FONT><BR>
+・・・と言うか、ほとんどはこのＧ−Ｇｕｉｌｔｙを書く為だけに見たり読んだりした訳なんですが。<BR>
+ちなみに、好き具合はタイトルの色、<BR>
+<FONT COLOR="AQUA"><B>「なかった事にして欲しい」「なくても困らない」</B></FONT><BR>
+<FONT COLOR="LIGHTGREEN"><B>「好きじゃない」「面白くない」</FONT></B><B><BR>
+<FONT COLOR="PINK">「普通」「可もなく、不可もなく」</FONT></B><BR>
+<FONT COLOR="YELLOW"><B>「好き」「面白い」</B></FONT><BR>
+<FONT COLOR="RED"><B>「とても好き」「とても面白い」</FONT></B><BR>
+<B>以上の５段階で評価</B>してます。未見の作品は灰色です。
+<P><P>
+
+
+
+<TABLE WIDTH="90%" CELLPADDING="20"><TR><TD BGCOLOR="black">
+<P><HR><P>
+<FONT SIZE="5" COLOR="RED">【ガンダム】</FONT><BR><BR>
+■　子供の頃に<FONT COLOR="RED"><B>プラモデル欲しさと、ロボットのためだけに見ていた。何だか台詞回しがカッコいいな</FONT></B>、とは子供心に思う。でもそれだけだった。<BR>
+　ある程度大きくなってから見返した時、<B><FONT COLOR="RED">「あ、こりゃ面白いわ」</B></FONT>と思ってしまった。見返したり、ガンダムファンと語るたびに、やっぱり面白い作品なんだな、と再確認する。<BR>
+　当時では考えられないようなＳＦ要素の盛り込み方がイイ感じ。<BR>
+　最近になって劇場版T〜Vを観たけど、１だけはダルかった。が、ＴＶ版をキレイに纏め上げた編集手腕には感服する。<BR>
+■　メカは古臭い感じこそあるものの、洗練されている。ほぼ全てのメカは今のデザイナーに、<B>今風にリファインするだけでカッコイイ</B>と思えてしまうから基礎がホントに凄いんだと思う。<BR>
+<BR>
+<BLOCKQUOTE>
+<FONT SIZE="5" COLOR="RED">【ＧＵＮＤＡＭ　ＴＨＥ　ＯＲＩＧＩＮ】</FONT><BR><BR>
+■　まだ完結してないけど、コレは面白いわ。ダルい部分もあるけど、かなり面白い。<B><FONT COLOR="RED">悔しいけど、面白い。</FONT></B><BR>
+　んでもって、既出の作品からの最もオイシイ部分を巧く抽出してある。今まで設定しかなかった部分の使い方も巧い。かなり整合性も取れてるし。正直、<B><FONT COLOR="RED">後出し作品の数少ない成功例</B></FONT>（それも相当な成功）だと思います。<BR>
+■　デザインの見直しの仕方も、憎いぐらいに巧みだ。でも正直、大河原さんのデザインより、安彦氏の画力とセンスのお陰って気はする。<BR>
+<BR>
+</BLOCKQUOTE>
+<P><HR><P>
+<FONT SIZE="5" COLOR="LIGHTGREEN">【Ｚガンダム】</FONT><BR><BR>
+■　子供心に、何だか好きになれず、飛ばし飛ばしで見ていた。最近になってしっかり見返すと、とても中途半端な作品だな、と思った。良い意味でも悪い意味でも、ウダウダしすぎて富野っぽいと思う。今ひとつ、人気の理由がわからない・・・。<BR>
+　見所はヤザンと、<B><FONT COLOR="RED">壊れっぷりの素敵なロザミア（笑）ぐらい</FONT></B>かなあ。あと、ギャグとしか思えないシャアの言動（笑）<BR>
+■　メカはカッコイイのとカッコ悪いのとが両極端。ＭＳっぽいのとそうでないの、好きなの嫌いなのとでも両極端。正直、マクロスからの影響を露呈してしまった変形機構は嫌い。<BR>
+<BR>
+<BLOCKQUOTE>
+<FONT SIZE="5" COLOR="AQUA">【劇場版　新訳Ｚガンダム】</FONT><BR><BR>
+■　正直、<FONT COLOR="RED"><B>１作目を観て投げた。編集し方も物語も作画も無茶苦茶</FONT></B>だわ、コレ。２作目以降はどうだか知らないけど、それを観たいと言う気にさえなれない。<BR>
+■　新作画ヴァージョンのアッシマーがカッコ良かった。それしか覚えてない。続編に出てくるらしい、白いガザＣもカッコイイな。<BR>
+<BR>
+</BLOCKQUOTE>
+<P><HR><P>
+<FONT SIZE="5" COLOR="AQUA">【ガンダムＺＺ】</FONT><BR><BR>
+■　<B><FONT COLOR="RED">コア・ストーリーは魅力的</FONT></B>なんだけど、まぁ、<B><FONT COLOR="RED">ハッキリ言えば酷い作品</FONT></B>だった。<BR>
+　ガンダムでギャグをやったっていいけど、面白くなくては意味がない。ガンダムでスーパーヒーローをやったっていいけど、それがカッコ良くなくては話にならない。<BR>
+　後半はまだ見られたけど、それでもツラい作品でした。ちなみに、作中の<B><FONT COLOR="RED">「泣き虫セシリア（前・後）」のシナリオだけは秀逸</FONT></B>だと思う。<BR>
+■　メカは大半が初代とＺのリメイクっぽいので、悪くはない。悪くはないが、特に印象に残ってるメカがある訳でもない。<BR>
+<BR>
+<P><HR><P>
+<FONT SIZE="5" COLOR="YELLOW">【逆襲のシャア】</FONT><BR><BR>
+■　うだうだとＺやＺＺをやらずに、<B><FONT COLOR="RED">最初からこれでちゃんと完結編をやってくれれば</FONT></B>、今みたいにガンダムの世界は派生しなかっただろうなと思う。個人的には面白く感じたが、ストーリー自体は小説版「ベルトーチカ・チルドレン」の方が好き。<BR>
+■　素直に、一時代後のメカを見た気がする。とにかくゴテゴテと暑苦しい武装続きだったデザインから贅肉が取れて、好感が持てる。<BR>
+<BLOCKQUOTE><FONT SIZE="5" COLOR="RED">【ベルトーチカ・チルドレン】</FONT><BR><BR>
+■　Ｚの時は、ただのキ印っぽい女だったベルトーチカが、ものすごい良い女になってる。劇場版のチェーンより、ベルトーチカを推す。ちなみに、小説版別ヴァージョン「ハイストリーマー」は読んでない。なお、<FONT COLOR="RED"><B>まずは劇場版を観ていることが前提。何しろ、富野御大の文章が小説としてはかなり稚拙</FONT></B>で、映像版を観ていないとイメージが難しい。<BR>
+■　メカデザインは、まあ、ナイチンゲールとかサザビーと比べても悪くないのでは。<BR></BLOCKQUOTE>
+<BR>
+<P><HR><P>
+<FONT SIZE="5" COLOR="PINK">【ガンダムＦ９１】</FONT><BR><BR>
+■　面白いんじゃないかな、と思うのだが、如何せん<B><FONT COLOR="RED">劇場版ダイジェスト編集？</FONT></B>のような感じなので、物足りない。<FONT COLOR="RED"><B>今からでも遅くないから、ちゃんとＴＶシリーズでやって欲しい。</FONT></B><BR>
+■　メカのデザインはあんまり好きじゃないが、試みとして一新されたデザインは嫌いでもない。<BR>
+<BR>
+<P><HR><P>
+<FONT SIZE="5" COLOR="YELLOW">【Ｖガンダム】</FONT><BR><BR>
+■　バイク、タイヤ、巨大ローラー、エンジェル＝ハイロゥなどの狂ってる設定（それも好きだけど）以外は、キャラクタ、物語ともに好きな作品。<BR>
+　ＴＶ放送コードに挑戦するような拷問、首切りなどは嫌いではない。人はぷちぷち死ぬし。何と言っても<B><FONT COLOR="RED">カテジナさん最高</FONT></B>だし。<BR>
+■　賛否はあるが、敵メカが敵メカらしく、主役メカは主役メカらしい点は好感が持てる。印象は薄い。<BR>
+<BR>
+<P><HR><P>
+<FONT SIZE="5" COLOR="RED">【Ｇガンダム】</FONT><BR><BR>
+■　<FONT COLOR="RED"><B>最初は毛嫌いしていて見なかったが、見たらとても面白かった。</FONT></B>香港映画好きだし。島本和彦好きだし。Ｇロボ好きだし。まぁ、ガンダムとしては如何なものかと言う意見にも頷けるが。<BR>
+　逆に言えば、<B><FONT COLOR="RED">ガンダムの名前を冠して、よくここまでやったなぁ</B></FONT>、と感心した。それも最初にガンダムの世界観をコレだけ壊したのは偉業だと思う。（逆に、この所為で以降のガンダムが何でもアリになってしまった気もするが・・・）　ストーリーだけを掻い摘むと、結構シッカリしてるし。<BR>
+■　メカ・デザインはハッキリ言うと嫌い。しかし、作品とのマッチ感は抜群だったので悪印象はない。<BR>
+<BR>
+<P><HR><P>
+<FONT SIZE="5" COLOR="AQUA">【ガンダムＷ】</FONT><BR><BR>
+■　<FONT COLOR="RED"><B>見所は和平派のシャトル破壊・カトルのコロニー破壊・ドロシー最高！の三点だけ</FONT></B>だった。着眼点は悪くないと思うが、話がバラバラで、一貫性がなさ過ぎた。美少年にも興味ないし。まあ、多分、<B>スポンサーの横槍が入った</B>んだろうな。イメージとしては「聖闘士星矢ガンダム」<BR>
+■　メカは色んな意味でダメすぎた。後半では少し回復するものの、前半のメカデザインのダメさを払拭するには至らなかった気がする。<BR>
+<BR>
+<BLOCKQUOTE><FONT SIZE="5" COLOR="PINK">【エンドレス・ワルツ】</FONT><BR><BR>
+■　むしろ、２時間映画としては、ＴＶより余程まとまってた。まぁ、顔見世興行な部分は否めませんが。<BR>
+■　「Ｗの延長としては」と言う限定付きでメカデザインは悪くないと思う。<BR></BLOCKQUOTE>
+<P><HR><P>
+<FONT SIZE="5" COLOR="PINK">【ガンダムＸ】</FONT><BR><BR>
+■　次回予告の演出はＧｏｏｄ。<B><FONT COLOR="RED">主人公の声がフリーザ様に似ている</B></FONT>のはいかがなものか。サテライトシステムやビットモビルスーツなどの痛い設定はあるものの、思ってたより物語も、その流れもシッカリしてたので、むしろ打ち切りが惜しまれる。地上編をウダウダやりすぎたのは失敗だなあ・・・。もっと早く展開してれば・・・。<BR>
+■　敵メカの方がカッコよくね？　つーか、ＸＸガンダムってヒゲじゃね？<BR>
+<BR>
+<P><HR><P>
+<FONT SIZE="5" COLOR="LIGHTGREEN">【∀ガンダム】</FONT><BR><BR>
+■　・・・<B><FONT COLOR="RED">ハウス名作ガンダム？</FONT></B>　名作劇場だと思って見たら、悪くないんじゃないかな。個人的には、ちょっと下手なのかワザとなのか、朗読口調の声優陣が雰囲気にマッチしてるように思えた。ラストの１０話ぐらいが無理矢理すぎ（苦笑）<BR>
+■　世間ではヒゲが酷評されてますが、個人的には、そんなに苦痛じゃないみたい。・・・まぁ、苦痛じゃないだけですが。<BR>
+<BR>
+<P><HR><P>
+<FONT SIZE="5" COLOR="LIGHTGREEN">【ガンダムＳＥＥＤ】</FONT><BR><BR>
+■　<FONT COLOR="RED"><B>最初の数話を見て、ブチ切れそうに</FONT></B>なったが、<FONT COLOR="RED"><B>中盤は意外にも、かなり面白くなった。</FONT></B>が、総集編多過ぎたり、いつまでも話の風呂敷が広がって結局、尻切れトンボ。<B><FONT COLOR="RED">「食材は高級なのに、出来あがった料理がダメ」</FONT></B>という典型例だったような気がする。ただまあ、あのいかにもアニメっぽい絵でガンダムをやられるのは、どうにも違和感が・・・。<BR>
+■　メカデザインは新旧織り交ぜた折衷案っぽい。フェイズシフト装甲はイカすんですが、それぐらいかなあ。<BR><BR>
+<FONT SIZE="5">【ガンダムＳＥＥＤデスティニー】</FONT><BR><BR>
+■　申し訳ないが、未見。<FONT COLOR="RED"><B>ネット各所でレヴューのみを見ただけなのだが、とても観る気になれない。</FONT></B><BR>
+■　動いている所を観ていないが、うーん。<BR>
+
+<BR>
+<P><HR><P><FONT SIZE="5" COLOR="RED">【ガンダム００８０】</FONT><BR><BR>
+■　<B><FONT COLOR="RED">物語は文句ナシに１番好き。</FONT></B>唯一、初代より好きだと言える。ガンダムシリーズで<FONT COLOR="RED"><B>唯一、不覚にも涙ぐんでしまった。</FONT></B>・・・ただ、「ガンダム」である必然性が、ほとんど無い気はするけど。ちなみに、バーニィが助かる小説版はクズだと思う。<BR>
+■　メカデザインのほとんどはリファインなれど、最も軍隊色が出ていて好感が持てる。ハイゴッグ最高。<BR>
+<BR>
+<P><HR><P>
+<FONT SIZE="5" COLOR="LIGHTGREEN">【ガンダム００８３】</FONT><BR><BR>
+■　<B><FONT COLOR="RED">ストーリーが酷過ぎて</FONT></B>見てられなかった。<FONT COLOR="RED"><B>シーンひとつひとつ、台詞回しなんかはカッコイイ</FONT></B>んだけどなぁ・・・。個人的には主人公達にニュータイプを出さなかったのは好感が持てる。特に<FONT COLOR="RED"><B>主人公がクスリを打って暴れまわる姿がステキ</FONT></B>だった。<BR>
+■　デザインは好きな部類だが、印象が希薄。デザインの良さを魅せ切れてない気がしました。あと、サイサリスとかデンドロビウムは発想が安易過ぎる気が。巨大ビームサーベルは笑ったが、好きだ（笑）<BR>
+<BLOCKQUOTE><FONT SIZE="5" COLOR="AQUA">【ジオンの残光】</FONT><BR><BR>
+■　上記の劇場公開版な訳ですが、ストーリー編集の酷さに<FONT COLOR="RED"><B>笑いさえ吹き出た。コレは酷過ぎる</FONT></B>だろ（笑）<BR>
+<BR></BLOCKQUOTE>
+<P><HR><P>
+<FONT SIZE="5" COLOR="AQUA">【第０８ＭＳ小隊】</FONT><BR>
+■　どうにも絵が苦手。・・・後付け設定に相当な無理を感じた訳ですが。ロボット物にしたいのか、ミリタリー色を出したいのか、ハートフルドラマにしたいのか、熱烈ラブストーリーにしたいのか、<FONT COLOR="RED"><B>楽しみ方が見えなかったシリーズ。</FONT></B>・・・知らなかったんですが、途中で監督さんが亡くなられてるんですね。最初の監督さんのまま最期まで見たかったかも。<BR>
+■　まぁ、今更になって山ほどの新メカを出されるのも困るが、大半がリファインなので、印象薄。<BR>
+<BLOCKQUOTE><FONT SIZE="5" COLOR="PINK">【ミラーズリポート】</FONT><BR><BR>
+■　別に劇場公開版にしなくても、シリーズ中に盛り込めただろう程度のお話だった訳ですが。<BR><BR>
+<FONT SIZE="5" COLOR="PINK">【ラスト･リゾート】</FONT><BR><BR>
+■　<FONT COLOR="RED"><B>０８小隊の完結編としては、むしろ必要不可欠</FONT></B>かと。むしろ、ちゃんとここまで描けと。<BR>
+<BR></BLOCKQUOTE>
+<P><HR><P>
+<FONT SIZE="5" COLOR="YELLOW">【クロスボーンガンダム】</FONT><BR><BR>
+■　絵が苦手。でも、<FONT COLOR="RED"><B>ストーリーとしては好きな部類で、Ｆ９１と続けてＴＶシリーズで見てみたい</FONT></B>と思った。内容はかなり富野色満開で結構面白いと思う。<BR>
+■　ガンダム以外の敵メカがダサすぎる。没画でも何でもイイから、雑魚メカもカトキさんに描いて欲しかった・・・。<BR>
+<BR>
+<BLOCKQUOTE><FONT SIZE="5" COLOR="LIGHTGREEN">【クロスボーンガンダム　鋼鉄の７人】</FONT><BR><BR>
+■　悪くはないんだけど、やっぱり<FONT COLOR="RED"><B>「無理矢理ですけど、続編を描きました！」</FONT></B>って感の方が強い。前回よりもブッ飛んでるし。多分、前回と違って、今回は長谷川さんだけの作品なんだろうな。<BR>
+■　Ｆ９９はイイかも。カトキさんのデザインなのかな？<BR>
+<BR></BLOCKQUOTE>
+
+<P><HR><P>
+<FONT SIZE="5" COLOR="LIGHTGREEN">【ガイアギア】</FONT><BR><BR>
+■　・・・<FONT COLOR="RED"><B>「ブラジルから来た少年」のガンダム版だなあ</FONT></B>と言う印象しか。もう一度ちゃんと読まないと。<BR>
+■　メカはモビルスーツとは違うんだなぁ、と言う印象しかない。
+<BR>
+<P><HR><P>
+<FONT SIZE="5" COLOR="YELLOW">【閃光のハサウェイ】</FONT><BR><BR>
+■　<FONT COLOR="RED"><B>物語はかなり好き。</FONT></B>ただ、こんなの映像化・・・ましてＴＶ化はできないだろうな（笑）<BR>
+■　モビルスーツは印象にない。<BR>
+<P><HR><P>
+<FONT SIZE="5" COLOR="AQUA">【ブルー・デスティニー】</FONT><BR><BR>
+■　漫画で読んだ。中途半端で終わってたけど。・・・ＥＸＺＡＭだっけ？　が、有りがちな設定なのと、ボトムズみたいだな、としか。<BR>
+■　まあ、メカ・デザインは中途半端なリメイクだなあ、と。<BR>
+<BR>
+<P><HR><P>
+<FONT SIZE="5" COLOR="LIGHTGREEN">【機動戦士1/2Ｚガンダム】</FONT><BR><BR>
+■　「有り」か「無し」かと問われると、答えに窮する。すげー微妙な作品。まあ、面白くはあるんだけども。<BR>
+■　何て言うか、やっぱり長谷川さんのデザインだなあ・・・。<BR>
+<BR>
+<P><HR><P>
+<FONT SIZE="5" COLOR="LIGHTGREEN">【Ｃ．Ｄ．Ａ．　若き彗星の肖像】</FONT><BR><BR>
+■　１巻だけ読んだ。<FONT COLOR="RED"><B>題材は悪くない</FONT></B>んじゃないのかな。ハマーンの萌えっぷりとマ・クベの死にっぷりに爆笑したけど。特に、続きを読みたい気はしないのだが、だんだんと面白くなってると言う噂なので、そのうち読むかも。<BR>
+■　印象薄い。<BR>
+<BR>
+<P><HR><P>
+<FONT SIZE="5" COLOR="YELLOW">【ＧＵＮＤＡＭ　CLIMAX U.C.　紡がれし血統】</FONT><BR><BR>
+■　ゲーム版は知らないが、漫画で読んだ。サイド・ストーリーとしては<B><FONT COLOR="RED">かなり面白い。</FONT></B>キャラクタの立ち具合もいいし、既存の設定やキャラクタの使い方も抜群に巧みだ。ガンダムらしさもあるし。<FONT COLOR="RED"><B>惜しむらくは連載を急ぎ過ぎた</FONT></B>のか、過去編（カムナ編）ばっかりがクローズアップされて、未来編（ナナ・シュン編）が細かく描かれていないことだなあ。せめて全３巻で読みたかった・・・。<BR>
+■　メカ・デザインは新しいのってなかったよね？<BR>
+<BR>
+<P><HR><P>
+<FONT SIZE="5" COLOR="PINK">【デイ・アフター・トゥモロー】</FONT><BR><BR>
+■　インサイド・ストーリーとしては良い出来だと思う。クローズアップするキャラクタや視点、整合性の取り方は面白かった。が、まあ、なんて言うかそれまでの作品で、挿話の域を出ないと言う気はする。<BR>
+■　これも新しいメカ出てないよね？<BR>
+<BR>
+<P><HR><P>
+<FONT SIZE="5" COLOR="LIGHTGREEN">【ＭＳ　ＩＧＬＯＯ　００７９　＆　６０３】</FONT><BR><BR>
+■　漫画版しか見てません。発想と着眼点はイイんだけどなあ。「結局、色々あって不採用」の似たような結論ばかりで、内容はイマイチ。<BR>
+■　物語と同じく、ヅダとか、発想と着眼点はイイんだけどなあ。<BR>
+<BR>
+<P><HR><P>
+<FONT SIZE="5" COLOR="AQUA">【シルエットフォーミュラー９１】</FONT><BR><BR>
+■　サナリィから市場を取り返すべく、アナハイムが<FONT COLOR="RED"><B>パクリのガンダムを作ってたって設定は面白かった</FONT></B>んだけど、それ以外は・・・。ストーリーも掴み所がないし、Ｆ９１との繋げ方も巧いとは思えないなあ。<BR>
+■　正直どうでもイイや。<BR>
+<BR>
+<P><HR><P>
+<FONT SIZE="5" COLOR="PINK">【ムーン・クライシス】</FONT><BR><BR>
+■　人物画が下手すぎる・・・。<FONT COLOR="RED"><B>メイファ・ギルボードの使い方は抜群だ</FONT></B>と思う。「ジオンの最期」という設定の持って行き方も巧いと思う。が、全般的にはいただけない。<BR>
+■　なんてーか、「俺が描いたガンダムを見てくれよ！」感たっぷりなのが好きになれない。悪くないと思うんだけど。<BR>
+<BR>
+<P><HR><P>
+<FONT SIZE="5">【アウターガンダム】</FONT><BR><BR>
+■　未見。<BR>
+■　未見。<BR>
+<BR>
+<P><HR><P>
+<FONT SIZE="5">【ＡＤＶＡＮＣＥ　ＯＦ　Ｚ】</FONT><BR><BR>
+■　未見。<BR>
+■　未見。<BR>
+<BR>
+<P><HR><P>
+<FONT SIZE="5" COLOR="AQUA">【ガンダムＡＬＩＶＥ】</FONT><BR><BR>
+■　うん。２巻まで読んだ。少年漫画だな。試みは面白いし、評価する。うん。<BR>
+■　うん。少年漫画だよ。うん。<BR>
+<BR>
+<P><HR><P>
+<FONT SIZE="5" COLOR="YELLOW">【ＭＳ戦記　機動戦士ガンダム　００７９外伝】</FONT><BR><BR>
+■　コレは内容的に面白い。少年漫画とは思えんな。外伝やサイド・ストーリーとしてあるべき姿だなー。<FONT COLOR="RED"><B>ガンダム初の外伝らしいが、この作品が以降のシリーズ派生を生んだ決定的作品（良い意味で）</FONT></B>なんだろうなー。<BR>
+■　デザインは大幅に変えられてないが、近藤氏の絵柄が好きか嫌いかで評価は分かれそうだ。個人的には好きだ。<BR>
+<BR>
+<P><HR><P>
+
+<P><HR><P>
+
+なんか、ｗｉｋｉで調べたら、小説、漫画、ゲーム他、死ぬほど作品が出てるのね・・・。正直、追い切れんわ。<BR>
+<BR>
+<FONT SIZE="5">【センチネル】</FONT>とかって読んでないけど、人工知能が知恵をつけるって設定はガンダム世界では見たくないなぁ。<BR>
+<P><P>
+<P><HR><P>
+<FONT SIZE="5" COLOR="WHITE"><center>富野作品</FONT></center>
+<P><HR><P>
+<FONT SIZE="5" COLOR="PINK">【ブレンパワード】</FONT><BR><BR>
+■　∀ガンダムの後から見たが、<FONT COLOR="RED"><B>∀ガンダムはブレンパワードの焼き直しにしか</FONT></B>思えなかった。面白くない訳ではなかったが、これまでの作品とか、どっかで見たような設定ばかりで、富野監督の老いを感じた。あと、<FONT COLOR="RED"><B>正体不明の力で全てを片付けるのはヤメて</FONT></B>欲しい・・・。<BR>
+■　ブレンパワードのデザインが、どうしても自分が中学校の時に描いたパトレイバーもどき（笑）にソックリだった事に驚いた。<BR>
+<BR>
+<P><HR><P>
+<FONT SIZE="5" COLOR="LIGHTGREEN">【キングゲイナー】</FONT><BR><BR>
+■　面白くない、とまでは言わないが、かと言って、じゃあ面白かったかと言われると、返答に窮する。未消化の伏線が多かったり、やっぱり<FONT COLOR="RED"><B>得体の知れないパワーで問題を解決してしまうのはクリエイターとしての仕事を放棄しているとしか</FONT></B>思えない。<BR> 
+■　まぁ、メカと言うよりはクリーチャーでしたねえ。アイデア的に面白いモノもあったけど、惹かれるデザインではなかったというのが結論。<BR> 
+<BR>
+<BR>
+<FONT SIZE="5" COLOR="YELLOW">【ダンバイン】</FONT><BR><BR>
+■　説明不足の感はあれど、面白い。かなり完成度の高い作品だと思う。何が良いかというと、未来世界ではないため、政治的・経済的な謀略がなく、<FONT COLOR="RED"><B>ファンタジー世界だけに単純かつ明朗快活な「国盗り」である点が面白い。</FONT></B><BR>
+■  この世界観とデザインは好き。むしろ、オリジナリティも出てるし、評価されてないのが勿体なく思うぐらい。<BR>
+<BR>
+<BR>
+<FONT SIZE="5" COLOR="AQUA">【エルガイム】</FONT><BR><BR>
+■　ごめん、残り４話ぐらいまで観たんだけど、投げてイイですか？<BR>
+■　デザイン自体はそんなに悪くない、むしろ良いと思うんだけど、話の中で活きてないのが勿体ない。<BR>
+<BR><BR>
+ <P><HR><P>
+<P><P>
+<FONT SIZE="5" COLOR="WHITE"><center>その他、有名ロボット物</FONT></center>
+<P><HR><P>
+<FONT SIZE="5" COLOR="RED">【高橋良輔作品】</FONT><BR><BR>
+■　面倒なのでまとめているが、実を言うと、<FONT COLOR="RED"><B>ストーリー・テリング自体は富野氏よりも遥かに高橋氏が好き</FONT></B>なのである。<BR>
+　世間的には<FONT COLOR="RED"><B>ボトムズが評価されているが、個人的にはダグラムの、あのどうしようもなく救いのないストーリーが好き</FONT></B>だったりする。<BR>
+■  面倒なので高橋作品でまとめてしまっているが、<FONT COLOR="RED"><B>ダグラムとボトムズ、ガリアンのメカ・デザインは、かなり好き</FONT></B>な部類に入る。<BR>
+<BR>
+<P><HR><P>
+<FONT SIZE="5" COLOR="PINK">【エヴァンゲリオン】</FONT><BR><BR>
+■　<FONT COLOR="RED"><B>最初の５話ぐらいまでは</FONT></B>ウルトラマンっぽくて、相当面白い雰囲気だったのになあ・・・。ＴＶ版の終わり方が悪いとは思わないが、<FONT COLOR="RED"><B>伏線ぐらい回収しやがれ。</FONT></B><BR>
+　劇場版の終わり方も悪いとは思わないが、<FONT COLOR="RED"><B>伏線ぐらい回収しやがれ。</FONT></B><BR>
+　正直、設定、物語、キャラクタなど、<FONT COLOR="RED"><B>面白い要素は沢山持ちつつも、凡作に終わった</FONT></B>感じ。<BR>
+■  デザインは割と好きだけど、<FONT COLOR="RED"><B>影の軍団を彷彿したのは俺だけでいい。</FONT></B><BR>
+<BR>
+<P><HR><P>
+<FONT SIZE="5">【コードギアス】</FONT><BR><BR>
+■　話題になってるけど、未見。<BR>
+■  未見。</FONT></B><BR>
+<BR>
+<P><HR><P>
+<FONT SIZE="5" COLOR="RED">【ジャイアントロボ　地球が静止する日】</FONT><BR><BR>
+■　大好き。もうね、クロスオーバー作品のあるべき姿です。熱すぎる物語、展開、キャラクタ、台詞回し、演出。過剰だけど、だが、それがいい。<BR>
+■  うん。昭和のレトロっぽい良さが出てるよね。</FONT></B><BR>
+<BR>
+<P><HR><P>
+<FONT SIZE="5" COLOR="RED">【ＴＨＥ　ＢＩＧ − Ｏ】</FONT><BR><BR>
+■　<FONT COLOR="RED"><B>ここ１０年ぐらいのオリジナル作品の中では最高の出来</FONT></B>だと思う。正直に言うと、決して嫌いな訳ではないが、第２部はない方が良かったなあ。<BR>
+■  昭和のレトロっぽさが最高に良い。</FONT></B><BR>
+<BR>
+
+
+
+
+</TD></TR></TABLE>
+</CENTER> 
+ 
+ 
+ 
+
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- St-HP-F -->
+
+ <div id="popup-container"></div>
+<!-- <script>
+    (function() {
+    const STORAGE_KEY = 'popupDismissed';
+    const excludedDomain = 'www.fc2web.com';
+    if (
+        localStorage.getItem(STORAGE_KEY) === 'true' ||
+        window.location.hostname === excludedDomain
+    ) {
+        return;
+    }
+    const container = document.getElementById('popup-container');
+    const shadow = container.attachShadow({ mode: 'open' });
+
+    shadow.innerHTML = `
+        <style>
+        .overlay {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: start;
+            justify-content: center;
+            z-index: 9999;
+        }
+        .popup {
+			color:#3d3d3d;
+            font-size: 12px;
+            background: white;
+            padding: 1em;
+            border-radius: 10px;
+            max-width: 450px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+            font-family: sans-serif;
+        }
+        .popup label {
+            color: #636363;
+            display: block;
+            margin-top: 1em;
+            font-size: 0.9em;
+        }
+        .popup button {
+            margin-top: 1em;
+            padding: 0.5em 1.5em;
+            border: none;
+            background: #007bff;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .popup button:hover {
+            background: #0056b3;
+        }
+        </style>
+        <div class="overlay">
+        <div class="popup">
+            <p>
+<h4>サービス終了のお知らせ</h4>
+FC2WEB は 2025年6月30日 (月) をもって、<br>
+サービスを終了とさせていただくこととなりました。<br>
+これまでのご愛顧に対し、深くお礼申しあげます。<br>
+詳しくは <a href="http://www.fc2web.com/" target="_blank" rel="noopener">FC2WEBポータル</a>をご確認ください。
+            </p>
+            <label><input type="checkbox" id="dont-show"> 今後このお知らせを表示しない</label>
+            <button id="close-btn">閉じる</button>
+        </div>
+        </div>
+    `;
+
+    const closeBtn = shadow.getElementById('close-btn');
+    const checkbox = shadow.getElementById('dont-show');
+
+    closeBtn.addEventListener('click', () => {
+        if (checkbox.checked) {
+        localStorage.setItem(STORAGE_KEY, 'true');
+        }
+        container.remove();
+    });
+    })();
+</script> -->
+
+
+
+<table cellSpacing=0 cellPadding=0 width="100%" bgColor=#FFFFFF border=0>
+<tr>
+<td width="30" valign="baseline"><a href="http://fc2.com/" target="_blank"><SPAN STYLE=" BACKGROUND: pink"><span style="font-size:11pt;" ><strong>SEO</strong></span></span></A></td>
+<td width="450" valign="bottom"> <script language="JavaScript" src="http://textad.net:10001/cgi-bin/manager.cgi?category_id=0&i=1" charset="shit_jis"></SCRIPT>
+<noscript>
+<a href="http://bbs.fc2.com/" target="_blank"><b><font color="#0000FF">掲示板</font></b></a>
+</noscript></td>
+<td align=right valign="bottom" noWrap style="font-size:12px";overflow:hidden;>[PR] <a href="https://blog.fc2.com/" target="_blank">爆速!無料ブログ</a> <a href="https://web.fc2.com/" target="_blank">無料ホームページ開設</a> <a href="https://live.fc2.com/">無料ライブ放送</a></td>
+</tr><tr><td colSpan=4 height=1></td></tr>
+</table>
+
+
+<img src="http://media.fc2.com/counter_img.php?id=59">
+
+<!-- En-HP-F -->

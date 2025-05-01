@@ -1,0 +1,326 @@
+<BODY BACKGROUND="yuki.html" BGCOLOR="#000000" TEXT="#e3ffe3" LINK="#78ff33" ALINK="#78ca88" VLINK="#78d988" onLoad="snow()">
+<!-- St-HP-H -->
+
+ 
+
+<!-- En-HP-H -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<Script Language="JavaScript">
+<!-- 
+writeMusicUnit("http://web.hpt.jp/gguilty/yuki.mp3");
+
+function writeMusicUnit(fname){
+  writeMusicUnit00(fname,150,40,false,true);
+}
+function writeRepeatMusicUnit(fname){
+  writeMusicUnit00(fname,150,40,true,true);
+}
+function writeMusicUnit00(fname,width,height,repeat,autostart){
+   var bIE,bMP3;
+   bMP3=fname.toLowerCase().match("¥.mp3$");
+   bIE=(navigator.appName == "Microsoft Internet Explorer");
+   if (bIE) {
+     document.write('<OBJECT WIDTH="');
+     document.write(width);
+     document.write('"HEIGHT="');
+     document.write(height);
+     document.write('"');
+     document.write(' CLASSID="clsid:22D6F312-B0F6-11D0-94AB-0080C74C7E95">');
+     document.write('<PARAM NAME="Src" VALUE="');
+     document.write(fname);
+     document.write('">');
+     document.write('<PARAM NAME="PanelSize" VALUE="2">');
+     document.write('<PARAM NAME="Panel" VALUE="0">');
+     if(autostart) document.write('<PARAM NAME="AutoStart" VALUE="TRUE">');
+     else      document.write('<PARAM NAME="AutoStart" VALUE="FALSE">');
+     if(repeat) document.write('<PARAM NAME="Repeat" VALUE="TRUE">');
+     else      document.write('<PARAM NAME="Repeat" VALUE="FALSE">');
+   }
+   document.write('<EMBED SRC="');
+   document.write(fname);
+   document.write('"');
+   document.write('  WIDTH="');
+   document.write(width);
+   document.write('" HEIGHT="');
+   document.write(height);
+   document.write('"');
+   document.write('  PANEL="0"');
+   if(autostart) document.write('  AUTOSTART="TRUE"');
+   else      document.write('  AUTOSTART="FALSE"');
+   if(repeat) document.write('  REPEAT="TRUE"');
+   else      document.write('  REPEAT="FALSE"');
+   if(bMP3){
+       document.write('  TYPE="audio/mpeg">');
+   }else{ 
+       document.write('  TYPE="audio/midi">');
+   }
+   if(bIE)document.write('</OBJECT>');
+}
+//--></SCRIPT>
+
+
+<script language="JavaScript">
+<!-- Snow Script by kurt.grigg@virgin.net
+N = 40; 
+Y = new Array();
+X = new Array();
+S = new Array();
+A = new Array();
+B = new Array();
+M = new Array();
+V = (document.layers)?1:0;
+
+iH=(document.layers)?window.innerHeight:window.document.body.clientHeight;
+iW=(document.layers)?window.innerWidth:window.document.body.clientWidth;
+for (i=0; i < N; i++){                                                                
+ Y[i]=Math.round(Math.random()*iH);
+ X[i]=Math.round(Math.random()*iW);
+ S[i]=Math.round(Math.random()*5+2);
+ A[i]=0;
+ B[i]=Math.random()*0.1+0.1;
+ M[i]=Math.round(Math.random()*1+1);
+}
+if (V){
+for (i = 0; i < N; i++)
+{document.write("<LAYER NAME='sn"+i+"' LEFT=0 TOP=0 BGCOLOR='#FFFFF0' CLIP='0,0,"+M[i]+","+M[i]+"'></LAYER>")}
+}
+else{
+document.write('<div style="position:absolute;top:0px;left:0px">');
+document.write('<div style="position:relative">');
+for (i = 0; i < N; i++)
+{document.write('<div id="si" style="position:absolute;top:0;left:0;width:'+M[i]+';height:'+M[i]+';background:#fffff0;font-size:'+M[i]+'"></div>')}
+document.write('</div></div>');
+}
+function snow(){
+var H=(document.layers)?window.innerHeight:window.document.body.clientHeight;
+var W=(document.layers)?window.innerWidth:window.document.body.clientWidth;
+var T=(document.layers)?window.pageYOffset:document.body.scrollTop;
+var L=(document.layers)?window.pageXOffset:document.body.scrollLeft;
+for (i=0; i < N; i++){
+sy=S[i]*Math.sin(90*Math.PI/180);
+sx=S[i]*Math.cos(A[i]);
+Y[i]+=sy;
+X[i]+=sx; 
+if (Y[i] > H){
+Y[i]=-10;
+X[i]=Math.round(Math.random()*W);
+M[i]=Math.round(Math.random()*1+1);
+S[i]=Math.round(Math.random()*5+2);
+}
+if (V){document.layers['sn'+i].left=X[i];document.layers['sn'+i].top=Y[i]+T}
+else{si[i].style.pixelLeft=X[i];si[i].style.pixelTop=Y[i]+T} 
+A[i]+=B[i];
+}
+setTimeout('snow()',120);
+}
+//-->
+</script>
+
+
+<TABLE cellSpacing=0 cellPadding=3 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD>
+      <P><FONT size=5><STRONG>雪あかり</STRONG></FONT><FONT 
+      size=3>　（1998年）　歌：ありよっち<A HREF="http://buyabubu.hp.infoseek.co.jp/"><FONT COLOR="WHITE"><B><DIV ALIGN="RIGHT">制作・著作　ＮａＭｅ</B></A></DIV></FONT></P></TD>
+</TR></TBODY></TABLE></P>
+<P>
+<TABLE cellSpacing=0 cellPadding=3 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD>
+      <P>窓辺にゆれる　まぶしいひかり<BR>　　闇夜を照らし　つもる粉雪<BR><BR>舞い散る　ましろは<BR>　　吐息を　かきけし……<BR><BR>このまま　雪のあかりに<BR>　　溶けてしまいたい<BR>いつかの　あのぬくもりは<BR>　　もう帰らない</P></TD>
+    <TD>
+      <P>写真のなかの　夏がやさしい<BR>　　昔の恋と　わすれたはずさ</P>
+      <P>差しだす　てのひら<BR>　　溶けだす　結晶……</P>
+      <P>もいちど　生まれかわって<BR>　　またあいたいな<BR>景色はうつろうけれど<BR>　　ぼくはここにいる</P></TD>
+    <TD>
+      <P>二人の　時間が<BR>　　めぐって　迷って……</P>
+      <P>もいちど　生まれかわって<BR>　　またあいたいね<BR>季節はうつろうけれど<BR>　　ぼくは祈ってる</P>
+      <P align=left>&nbsp;</P></TD>
+    <TD>
+      <P>&nbsp;</P>
+      <P>春がきても　夏がきても　秋になっても……<BR>　　笑ってても　夢をみても　恋をしても……</P>
+      <P>春がきても　夏がきても　秋になっても……<BR>　　笑ってても　夢をみても　恋をしても……</P>
+      <P>春がきても　夏がきても　秋になっても……<BR>　　笑ってても　夢をみても　恋をしても……</P></TD></TR></TBODY></TABLE></P> 
+  
+ <HR SIZE="1" WIDTH="540" NOSHADE>
+<BR><BR>
+<TABLE BGCOLOR="SILVER" CELLPADDING="10" CELLSPACING="0" WIDTH="85%"><TR><TD><CENTER>
+<FONT SIZE="3"><B><A HREF="../index.html"><FONT COLOR="RED">◆◆　ＨＯＭＥ　◆◆</FONT></A>　　　<A HREF="../sound.html"><FONT COLOR="RED">◆◆　ＬＩＳＴ　◆◆</FONT></A>　　　<A HREF="javascript:history.back(-1)"><FONT COLOR="RED">◆◆　ＢＡＣＫ　◆◆</FONT></A></CENTER></B></FONT>
+</TD></TR></TABLE>
+<BR><BR>
+</CENTER>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- St-HP-F -->
+
+ <div id="popup-container"></div>
+ <!-- <script>
+    (function() {
+    const STORAGE_KEY = 'popupDismissed';
+    const excludedDomain = 'www.fc2web.com';
+    if (
+        localStorage.getItem(STORAGE_KEY) === 'true' ||
+        window.location.hostname === excludedDomain
+    ) {
+        return;
+    }
+    const container = document.getElementById('popup-container');
+    const shadow = container.attachShadow({ mode: 'open' });
+
+    shadow.innerHTML = `
+        <style>
+        .overlay {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: start;
+            justify-content: center;
+            z-index: 9999;
+        }
+        .popup {
+			color:#3d3d3d;
+            font-size: 12px;
+            background: white;
+            padding: 1em;
+            border-radius: 10px;
+            max-width: 450px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+            font-family: sans-serif;
+        }
+        .popup label {
+            color: #636363;
+            display: block;
+            margin-top: 1em;
+            font-size: 0.9em;
+        }
+        .popup button {
+            margin-top: 1em;
+            padding: 0.5em 1.5em;
+            border: none;
+            background: #007bff;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .popup button:hover {
+            background: #0056b3;
+        }
+        </style>
+        <div class="overlay">
+        <div class="popup">
+            <p>
+<h4>サービス終了のお知らせ</h4>
+FC2WEB は 2025年6月30日 (月) をもって、<br>
+サービスを終了とさせていただくこととなりました。<br>
+これまでのご愛顧に対し、深くお礼申しあげます。<br>
+詳しくは <a href="http://www.fc2web.com/" target="_blank" rel="noopener">FC2WEBポータル</a>をご確認ください。
+            </p>
+            <label><input type="checkbox" id="dont-show"> 今後このお知らせを表示しない</label>
+            <button id="close-btn">閉じる</button>
+        </div>
+        </div>
+    `;
+
+    const closeBtn = shadow.getElementById('close-btn');
+    const checkbox = shadow.getElementById('dont-show');
+
+    closeBtn.addEventListener('click', () => {
+        if (checkbox.checked) {
+        localStorage.setItem(STORAGE_KEY, 'true');
+        }
+        container.remove();
+    });
+    })();
+</script> -->
+
+
+
+<table cellSpacing=0 cellPadding=0 width="100%" bgColor=#FFFFFF border=0>
+<tr>
+<td width="30" valign="baseline"><a href="http://fc2.com/" target="_blank"><SPAN STYLE=" BACKGROUND: pink"><span style="font-size:11pt;" ><strong>SEO</strong></span></span></A></td>
+<td width="450" valign="bottom"> <script language="JavaScript" src="http://textad.net:10001/cgi-bin/manager.cgi?category_id=0&i=1" charset="shit_jis"></SCRIPT>
+<noscript>
+<a href="http://bbs.fc2.com/" target="_blank"><b><font color="#0000FF">掲示板</font></b></a>
+</noscript></td>
+<td align=right valign="bottom" noWrap style="font-size:12px";overflow:hidden;>[PR] <a href="https://blog.fc2.com/" target="_blank">爆速!無料ブログ</a> <a href="https://web.fc2.com/" target="_blank">無料ホームページ開設</a> <a href="https://live.fc2.com/">無料ライブ放送</a></td>
+</tr><tr><td colSpan=4 height=1></td></tr>
+</table>
+
+
+<img src="http://media.fc2.com/counter_img.php?id=59">
+
+<!-- En-HP-F -->

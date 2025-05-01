@@ -1,0 +1,248 @@
+ <Script Language="JavaScript">
+<!-- 
+writeMusicUnit("http://web.hpt.jp/gguilty/aerukara.mp3");
+
+function writeMusicUnit(fname){
+  writeMusicUnit00(fname,150,40,false,true);
+}
+function writeRepeatMusicUnit(fname){
+  writeMusicUnit00(fname,150,40,true,true);
+}
+function writeMusicUnit00(fname,width,height,repeat,autostart){
+   var bIE,bMP3;
+   bMP3=fname.toLowerCase().match("¥.mp3$");
+   bIE=(navigator.appName == "Microsoft Internet Explorer");
+   if (bIE) {
+     document.write('<OBJECT WIDTH="');
+     document.write(width);
+     document.write('"HEIGHT="');
+     document.write(height);
+     document.write('"');
+     document.write(' CLASSID="clsid:22D6F312-B0F6-11D0-94AB-0080C74C7E95">');
+     document.write('<PARAM NAME="Src" VALUE="');
+     document.write(fname);
+     document.write('">');
+     document.write('<PARAM NAME="PanelSize" VALUE="2">');
+     document.write('<PARAM NAME="Panel" VALUE="0">');
+     if(autostart) document.write('<PARAM NAME="AutoStart" VALUE="TRUE">');
+     else      document.write('<PARAM NAME="AutoStart" VALUE="FALSE">');
+     if(repeat) document.write('<PARAM NAME="Repeat" VALUE="TRUE">');
+     else      document.write('<PARAM NAME="Repeat" VALUE="FALSE">');
+   }
+   document.write('<EMBED SRC="');
+   document.write(fname);
+   document.write('"');
+   document.write('  WIDTH="');
+   document.write(width);
+   document.write('" HEIGHT="');
+   document.write(height);
+   document.write('"');
+   document.write('  PANEL="0"');
+   if(autostart) document.write('  AUTOSTART="TRUE"');
+   else      document.write('  AUTOSTART="FALSE"');
+   if(repeat) document.write('  REPEAT="TRUE"');
+   else      document.write('  REPEAT="FALSE"');
+   if(bMP3){
+       document.write('  TYPE="audio/mpeg">');
+   }else{ 
+       document.write('  TYPE="audio/midi">');
+   }
+   if(bIE)document.write('</OBJECT>');
+}
+//--></SCRIPT>
+
+
+<BODY BGCOLOR="BLACK" TEXT="WHITE" LINK="RED" VLINK="RED" ALINK="YELLOW">
+<!-- St-HP-H -->
+
+ 
+
+<!-- En-HP-H -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<TABLE cellSpacing=0 cellPadding=3 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD>
+      <P><FONT size=5><STRONG>またあえるから</STRONG></FONT><FONT 
+      size=3>　（1998年）</FONT><A HREF="http://buyabubu.hp.infoseek.co.jp/"><FONT COLOR="WHITE"><B><DIV ALIGN="RIGHT">制作・著作　ＮａＭｅ</B></A></DIV></P></TD>
+</TR></TBODY></TABLE></P>
+<P>
+<TABLE cellSpacing=0 cellPadding=3 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD>
+      <P>小さな君の肩　記憶に残すため</P>
+      <P>言いかけたサヨナラも　すべて捨て　君を抱きしめる</P>
+      <P>いま　僕等を包みこむ　時間も歩みを止めていく<BR>　　ほら　僕等はつながれる　広い空の下で</P></TD>
+    <TD>
+      <P>&nbsp;</P>
+      <P>笑顔見せて　手を振って　また逢えるから</P>
+      <P>きっと逢えるから</P></TD>
+    <TD>
+      <P>&nbsp;</P></TD></TR></TBODY>
+<BR>
+</TABLE></P>
+
+<HR SIZE="1" WIDTH="540" NOSHADE>
+<BR><BR>
+<TABLE BGCOLOR="SILVER" CELLPADDING="10" CELLSPACING="0" WIDTH="85%"><TR><TD><CENTER>
+<FONT SIZE="3"><B><A HREF="../index.html"><FONT COLOR="RED">◆◆　ＨＯＭＥ　◆◆</FONT></A>　　　<A HREF="../sound.html"><FONT COLOR="RED">◆◆　ＬＩＳＴ　◆◆</FONT></A>　　　<A HREF="javascript:history.back(-1)"><FONT COLOR="RED">◆◆　ＢＡＣＫ　◆◆</FONT></A></CENTER></B></FONT>
+</TD></TR></TABLE>
+<BR><BR>
+</CENTER>
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- St-HP-F -->
+
+ <div id="popup-container"></div>
+ <!-- <script>
+    (function() {
+    const STORAGE_KEY = 'popupDismissed';
+    const excludedDomain = 'www.fc2web.com';
+    if (
+        localStorage.getItem(STORAGE_KEY) === 'true' ||
+        window.location.hostname === excludedDomain
+    ) {
+        return;
+    }
+    const container = document.getElementById('popup-container');
+    const shadow = container.attachShadow({ mode: 'open' });
+
+    shadow.innerHTML = `
+        <style>
+        .overlay {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: start;
+            justify-content: center;
+            z-index: 9999;
+        }
+        .popup {
+			color:#3d3d3d;
+            font-size: 12px;
+            background: white;
+            padding: 1em;
+            border-radius: 10px;
+            max-width: 450px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+            font-family: sans-serif;
+        }
+        .popup label {
+            color: #636363;
+            display: block;
+            margin-top: 1em;
+            font-size: 0.9em;
+        }
+        .popup button {
+            margin-top: 1em;
+            padding: 0.5em 1.5em;
+            border: none;
+            background: #007bff;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .popup button:hover {
+            background: #0056b3;
+        }
+        </style>
+        <div class="overlay">
+        <div class="popup">
+            <p>
+<h4>サービス終了のお知らせ</h4>
+FC2WEB は 2025年6月30日 (月) をもって、<br>
+サービスを終了とさせていただくこととなりました。<br>
+これまでのご愛顧に対し、深くお礼申しあげます。<br>
+詳しくは <a href="http://www.fc2web.com/" target="_blank" rel="noopener">FC2WEBポータル</a>をご確認ください。
+            </p>
+            <label><input type="checkbox" id="dont-show"> 今後このお知らせを表示しない</label>
+            <button id="close-btn">閉じる</button>
+        </div>
+        </div>
+    `;
+
+    const closeBtn = shadow.getElementById('close-btn');
+    const checkbox = shadow.getElementById('dont-show');
+
+    closeBtn.addEventListener('click', () => {
+        if (checkbox.checked) {
+        localStorage.setItem(STORAGE_KEY, 'true');
+        }
+        container.remove();
+    });
+    })();
+</script> -->
+
+
+
+<table cellSpacing=0 cellPadding=0 width="100%" bgColor=#FFFFFF border=0>
+<tr>
+<td width="30" valign="baseline"><a href="http://fc2.com/" target="_blank"><SPAN STYLE=" BACKGROUND: pink"><span style="font-size:11pt;" ><strong>SEO</strong></span></span></A></td>
+<td width="450" valign="bottom"> <script language="JavaScript" src="http://textad.net:10001/cgi-bin/manager.cgi?category_id=0&i=1" charset="shit_jis"></SCRIPT>
+<noscript>
+<a href="http://bbs.fc2.com/" target="_blank"><b><font color="#0000FF">掲示板</font></b></a>
+</noscript></td>
+<td align=right valign="bottom" noWrap style="font-size:12px";overflow:hidden;>[PR] <a href="https://blog.fc2.com/" target="_blank">爆速!無料ブログ</a> <a href="https://web.fc2.com/" target="_blank">無料ホームページ開設</a> <a href="https://live.fc2.com/">無料ライブ放送</a></td>
+</tr><tr><td colSpan=4 height=1></td></tr>
+</table>
+
+
+<img src="http://media.fc2.com/counter_img.php?id=59">
+
+<!-- En-HP-F -->

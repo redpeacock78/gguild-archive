@@ -1,0 +1,546 @@
+<HTML>
+<HEAD>
+<TITLE>シナリオ：Ｇ−ＧＵＩＬＴＹ</TITLE>
+
+<script language="JavaScript">
+/*http://myako.net/  ako's cyberpage*/
+var hayasa = 70
+var maayokoMa,Haba,Takasa
+var yoko,tate
+var ponyoko = 10
+var pontate = 0.2
+var mah = -9
+var Po = 0.9
+var nPo = 0.5
+var ahoP = 0
+function Pon3(){
+if(document.layers){
+yoko=32,tate=window.innerHeight * 0.79
+}else{
+yoko=32,tate=document.body.clientHeight * 0.79 }
+setTimeout('Pon4()', 100) }
+function Pon4(){
+if(IE || NN4){
+if(document.layers){
+Haba = window.innerWidth
+Takasa = window.innerHeight
+pontate += mah * Po
+tate += pontate * Po
+yoko += ponyoko * Po
+maayokoMa = eval("document.maayoko")
+maayokoMa.top = Takasa * 0.79 - tate
+maayokoMa.left = yoko
+}else{
+Haba = document.body.clientWidth
+Takasa = document.body.clientHeight
+pontate += mah * Po
+tate += pontate * Po
+yoko += ponyoko * Po
+maayokoMa = eval("maayoko.style")
+maayokoMa.posTop = Takasa * 0.79 - tate
+maayokoMa.posLeft = yoko + 0.1}
+if (yoko > Haba * 0.9) {ponyoko = -ponyoko}
+if (yoko < -30){ponyoko = -ponyoko}
+if (tate <= 0.) {
+if (ahoP == 0) {
+ahoP = -pontate}
+pontate = -nPo * pontate
+tate = -tate
+if (pontate < 20) {
+pontate = ahoP;}}
+setTimeout("Pon4()", hayasa)}}
+var NA = navigator.appName;
+var IE = navigator.appVersion.indexOf("MSIE");
+var IE4 = (IE>0) && (parseInt(navigator.appVersion.substring(IE+5, IE+6)) >= 4)
+var NN = navigator.appName.lastIndexOf("Netscape");
+var NN4 = (NN >= 0) && (parseInt(navigator.appVersion.substring(0,2)) >= 4)
+</script>
+</HEAD>
+
+<BODY BACKGROUND="scenario.html" BGCOLOR="#ffffff" TEXT="#5e2e0c" LINK="#FF7855" ALINK="#ffff00" VLINK="#e65700" onload="Pon3()">
+<!-- St-HP-H -->
+
+ 
+
+<!-- En-HP-H -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<SCRIPT language="JavaScript">
+<!--
+if(navigator.appVersion.charAt(0) >= "3") {
+var img = new Array();
+img[0] = new Image(); img[0].src = "hr.gif";
+img[1] = new Image(); img[1].src = "ab.gif";
+img[2] = new Image(); img[2].src = "ev.gif";
+img[3] = new Image(); img[3].src = "sh.gif";
+img[4] = new Image(); img[4].src = "mi.gif";
+img[5] = new Image(); img[5].src = "za.gif";
+img[6] = new Image(); img[6].src = "ke.gif";
+img[7] = new Image(); img[7].src = "dg.gif";
+img[8] = new Image(); img[8].src = "sn.gif";
+img[9] = new Image(); img[9].src = "ca.gif";
+img[10] = new Image(); img[10].src = "cx.gif";
+img[11] = new Image(); img[11].src = "bo.gif";
+img[12] = new Image(); img[12].src = "ro.gif";
+img[13] = new Image(); img[13].src = "gi.gif";
+img[14] = new Image(); img[14].src = "ba.gif";
+img[15] = new Image(); img[15].src = "aj.gif";
+img[16] = new Image(); img[16].src = "r1.gif";
+img[17] = new Image(); img[17].src = "hn.gif";
+img[18] = new Image(); img[18].src = "r2.gif";
+img[19] = new Image(); img[19].src = "st.gif";
+img[20] = new Image(); img[20].src = "lw.gif";
+img[21] = new Image(); img[21].src = "ge.gif";
+img[22] = new Image(); img[22].src = "kx.gif";
+img[23] = new Image(); img[23].src = "un.gif";
+img[24] = new Image(); img[24].src = "ax.gif";
+img[25] = new Image(); img[25].src = "ed.gif";
+img[26] = new Image(); img[26].src = "ch.gif";
+img[27] = new Image(); img[27].src = "he.gif";
+img[28] = new Image(); img[28].src = "fi.gif";
+img[29] = new Image(); img[29].src = "dn.gif";
+img[30] = new Image(); img[30].src = "c6.gif";
+img[31] = new Image(); img[31].src = "ka.gif";
+img[32] = new Image(); img[32].src = "q1.gif";
+img[33] = new Image(); img[33].src = "c9.gif";
+img[34] = new Image(); img[34].src = "aj.gif";
+img[35] = new Image(); img[35].src = "ca.gif";
+img[36] = new Image(); img[36].src = "ox.gif";
+img[37] = new Image(); img[37].src = "cq.gif";
+img[38] = new Image(); img[38].src = "te.gif";
+img[39] = new Image(); img[39].src = "za.gif";
+img[40] = new Image(); img[40].src = "pd.gif";
+img[41] = new Image(); img[41].src = "an.gif";
+img[42] = new Image(); img[42].src = "ol.gif";
+img[43] = new Image(); img[43].src = "dn.gif";
+img[44] = new Image(); img[44].src = "ku.gif";
+img[45] = new Image(); img[45].src = "z2.gif";
+img[46] = new Image(); img[46].src = "gx.gif";
+img[47] = new Image(); img[47].src = "ib.gif";
+img[48] = new Image(); img[48].src = "x0.gif";
+img[49] = new Image(); img[49].src = "xx.gif";
+img[50] = new Image(); img[50].src = "xx.gif";
+img[51] = new Image(); img[51].src = "dr.gif";
+img[52] = new Image(); img[52].src = "sx.gif";
+img[53] = new Image(); img[53].src = "bi.gif";
+img[54] = new Image(); img[54].src = "ho.gif";
+img[55] = new Image(); img[55].src = "sb.gif";
+img[56] = new Image(); img[56].src = "by.gif";
+img[57] = new Image(); img[57].src = "xx.gif";
+img[58] = new Image(); img[58].src = "xx.gif";
+img[59] = new Image(); img[59].src = "dr.gif";
+img[60] = new Image(); img[60].src = "sx.gif";
+img[61] = new Image(); img[61].src = "bi.gif";
+img[62] = new Image(); img[62].src = "ho.gif";
+
+
+
+}
+function _in(nam,num) {
+if(navigator.appVersion.charAt(0) >= "3") {
+document.images[nam].src = img[num].src;
+} else { }
+}
+function _out(nam,num) {
+document.images[nam].src = img[num].src;
+}
+//-->
+</SCRIPT>
+
+<STYLE type="text/css">
+<!--
+a:link {text-decoration:none;}
+a:visited {text-decoration:none;}
+a:hover {text-decoration:underline;}
+a:active {text-decoration:none;}
+-->
+</STYLE>
+</HEAD>
+<div id="maayoko" style="position: absolute; top: 0; left:0">
+<img src="scenario/hx.gif">
+</div>
+
+
+
+
+
+
+
+
+
+<TABLE BGCOLOR="MAROON"><TR><TD>
+<IMG SRC="scenario/ab.gif" LOWSRC="scenario/ax.gif" BORDER="0" WIDTH="180" HIGHT="180" name="link1" onmouseover="_in('link1',3)" onmouseout="_out('link1',0)"></TD></TR></TABLE>
+
+<CENTER>
+
+
+
+<TABLE BORDER="0" CELLSPACING="1" CELLPADDING="4" WIDTH="97%" BGCOLOR="BLACK">
+<TH BGCOLOR="ORANGE" COLSPAN="4">CONTENTS</TH>
+<TR><TD>
+
+
+
+
+
+<B>
+
+<TR>
+<TD BGCOLOR="RED" ALIGN="CENTER">
+<A HREF="readme.html" onmouseover="_in('link1',6)" onmouseout="_out('link1',0)"><FONT COLOR="WHITE"><B>【はじめに】</B></FONT></A>
+<BR>
+</TD>
+
+<TD BGCOLOR="LIGHTGREEN">
+<A HREF="char/index.html" onmouseover="_in('link1',2)" onmouseout="_out('link1',0)">登場人物</A>
+<BR>
+</TD>
+
+
+<TD>
+<A HREF="story.html" onmouseover="_in('link1',5)" onmouseout="_out('link1',0)">ＳＴＯＲＹ</A>
+<BR>
+</TD>
+</TR>
+
+
+<TR><TD><FONT SIZE="1"><BR></FONT></TD></TR>
+
+<TD>
+<A HREF="scenario/GG01ae.html" onmouseover="_in('link1',1)" onmouseout="_out('link1',0)">第１話「目覚め」</A>
+<BR>
+<A HREF="scenario/GG02trog.html" onmouseover="_in('link1',2)" onmouseout="_out('link1',0)">第２話「Ｇの再来」</A>
+<BR>
+<A HREF="scenario/GG03LM.html" onmouseover="_in('link1',3)" onmouseout="_out('link1',0)">第３話「伝説のマシン」</A>
+<BR>
+<A HREF="scenario/GG04HP.html" onmouseover="_in('link1',4)" onmouseout="_out('link1',0)">第４話「英雄の証明」</A>
+<BR>
+<A HREF="scenario/GG05km.html" onmouseover="_in('link1',5)" onmouseout="_out('link1',0)">第５話「神託の騎士達」</A>
+<BR>
+<A HREF="scenario/GG06BB.html" onmouseover="_in('link1',6)" onmouseout="_out('link1',0)">第６話「黒い機体」</A>
+<BR>
+
+<A HREF="scenario/GG07ps.html" onmouseover="_in('link1',7)" onmouseout="_out('link1',0)">第７話「ポート攻防戦」</A>
+<BR>
+
+<A HREF="scenario/GG08aodl.html" onmouseover="_in('link1',8)" onmouseout="_out('link1',0)">第８話「死線上の独唱曲(ｱﾘｱ)」</A>
+<BR>
+
+<A HREF="scenario/GG09R.html" onmouseover="_in('link1',9)" onmouseout="_out('link1',0)">第９話「核動力を奪回せよ」</A>
+<BR>
+
+<A HREF="scenario/GG10miim.html" onmouseover="_in('link1',10)" onmouseout="_out('link1',0)">第10話「仮面の男」</A>
+<BR>
+
+<A HREF="scenario/GG11dr.html" onmouseover="_in('link1',11)" onmouseout="_out('link1',0)">第11話「決死のラリー」</A>
+<BR>
+
+<A HREF="scenario/GG12ITU.html" onmouseover="_in('link1',12)" onmouseout="_out('link1',0)">第12話「この広い宇宙の中で」</A><BR>
+
+<A HREF="scenario/GG13ev.html" onmouseover="_in('link1',13)" onmouseout="_out('link1',0)">第13話「それぞれの思惑」</A><BR>
+
+<A HREF="scenario/GG14GS1.html" onmouseover="_in('link1',14)" onmouseout="_out('link1',0)">第14話「大脱走（前編）」</A><BR>
+</TD>
+
+<TD>
+<A HREF="scenario/GG15GE2.html" onmouseover="_in('link1',15)" onmouseout="_out('link1',0)">第15話「大脱走（後編）」</A><BR>
+
+<A HREF="scenario/GG16asd.html" onmouseover="_in('link1',16)" onmouseout="_out('link1',0)">第16話「疑惑の日」</A><BR>
+
+<A HREF="scenario/GG17oow.html" onmouseover="_in('link1',17)" onmouseout="_out('link1',0)">第17話「開戦前夜」</A><BR>
+
+<A HREF="scenario/GG18COC.html" onmouseover="_in('link1',18)" onmouseout="_out('link1',0)">第18話「混沌の要塞（前編）」</A><BR>
+
+<A HREF="scenario/GG19coc.html" onmouseover="_in('link1',19)" onmouseout="_out('link1',0)">第19話「混沌の要塞（後編）」</A><BR>
+
+<A HREF="scenario/GG20GT.html" onmouseover="_in('link1',20)" onmouseout="_out('link1',0)">第20話「与えられた真実」</A><BR>
+
+<A HREF="scenario/GG21woh.html" onmouseover="_in('link1',21)" onmouseout="_out('link1',0)">第21話「正義の在処」</A><BR>
+
+<A HREF="scenario/GG22Rm.html" onmouseover="_in('link1',22)" onmouseout="_out('link1',0)">第22話「甦る、記憶」</A><BR>
+
+<A HREF="scenario/GG23ex.html" onmouseover="_in('link1',23)" onmouseout="_out('link1',0)">第23話「脱出」</A><BR>
+
+<BR>
+<A HREF="scenario/GGSP1.html" onmouseover="_in('link1',59)" onmouseout="_out('link1',0)">特別編「ゆりかご機関」</A><BR>
+
+<A HREF="scenario/GGSP2.html" onmouseover="_in('link1',60)" onmouseout="_out('link1',0)">特別編「世界の終わり」</A><BR>
+
+<A HREF="scenario/GGSP3.html" onmouseover="_in('link1',61)" onmouseout="_out('link1',0)">特別編「ハイド・アンド・シーク」</A><BR>
+
+<A HREF="scenario/GGSP4.html" onmouseover="_in('link1',62)" onmouseout="_out('link1',0)">特別編「Ｇの輪郭」</A>
+</TD><BR>
+
+<TD>
+<A HREF="scenario/GG24amd.html" onmouseover="_in('link1',24)" onmouseout="_out('link1',0)">第24話「束の間の、まどろみ」</A><BR>
+
+<A HREF="scenario/GG25pp.html" onmouseover="_in('link1',25)" onmouseout="_out('link1',0)">第25話「参戦」</A><BR>
+
+<A HREF="scenario/GG26eid.html" onmouseover="_in('link1',26)" onmouseout="_out('link1',0)">第26話「暗闇の暗殺者」</A><BR>
+
+<A HREF="scenario/GG27ltb.html" onmouseover="_in('link1',27)" onmouseout="_out('link1',0)">第27話「裏切る、くちびる」</A><BR>
+
+<A HREF="scenario/GG28EBO.html" onmouseover="_in('link1',28)" onmouseout="_out('link1',0)">第28話「ずうっと苦い、オレンジ」</A><BR>
+
+<A HREF="scenario/GG29KP.html" onmouseover="_in('link1',29)" onmouseout="_out('link1',0)">第29話「追撃のカイン」</A><BR>
+
+<A HREF="scenario/GG30eoc.html" onmouseover="_in('link1',30)" onmouseout="_out('link1',0)">第30話「混戦の果てに」</A><BR>
+
+<A HREF="scenario/GG31WWF.html" onmouseover="_in('link1',31)" onmouseout="_out('link1',0)">第31話「顔のない戦場」</A><BR>
+
+<A HREF="scenario/GG32DS.html" onmouseover="_in('link1',32)" onmouseout="_out('link1',0)">第32話「夢のような世界」</A><BR>
+
+<A HREF="scenario/GG33SD.html" onmouseover="_in('link1',33)" onmouseout="_out('link1',0)">第33話「撃墜す」</A><BR>
+
+<A HREF="scenario/GG34df.html" onmouseover="_in('link1',34)" onmouseout="_out('link1',0)">第34話「ダグラスの失脚」</A><BR>
+
+<A HREF="scenario/GG35qa.html" onmouseover="_in('link1',35)" onmouseout="_out('link1',0)">第35話「女王 降臨」</A><BR>
+
+<A HREF="scenario/GG36NG.html" onmouseover="_in('link1',36)" onmouseout="_out('link1',0)">第36話「狭き門」</A><BR>
+
+</TD>
+
+
+<TD>
+<A HREF="scenario/GG37wp.html" onmouseover="_in('link1',37)" onmouseout="_out('link1',0)">第37話「糸ひくもの」</A><BR>
+
+<A HREF="scenario/GG38FtM.html" onmouseover="_in('link1',38)" onmouseout="_out('link1',0)">第38話「月へ」</A><BR>
+
+<A HREF="scenario/GG39TTS.html" onmouseover="_in('link1',39)" onmouseout="_out('link1',0)">第39話「生存闘争」</A><BR>
+
+<A HREF="scenario/GG40cd.html" onmouseover="_in('link1',40)" onmouseout="_out('link1',0)">第40話「ぬぐえぬ犠牲」</A><BR>
+
+<A HREF="scenario/GG41dii.html" onmouseover="_in('link1',41)" onmouseout="_out('link1',0)">第41話「幻影に踊る」</A><BR>
+
+<A HREF="scenario/GG42DSS.html" onmouseover="_in('link1',42)" onmouseout="_out('link1',0)">第42話「流星の日（前編）」</A><BR>
+
+<A HREF="scenario/GG43dss.html" onmouseover="_in('link1',43)" onmouseout="_out('link1',0)">第43話「流星の日（後編）」</A><BR>
+
+<BR>
+<A HREF="scenario/GGSP5.html" onmouseover="_in('link1',55)" onmouseout="_out('link1',0)">特別編「始まり」</A><BR>
+
+<A HREF="scenario/GGSP6.html" onmouseover="_in('link1',56)" onmouseout="_out('link1',0)">特別編「世界を、その掌に」</A><BR>
+
+<A HREF="scenario.html" onmouseover="_in('link1',57)" onmouseout="_out('link1',0)">特別編「未定」</A><BR>
+
+<A HREF="scenario.html" onmouseover="_in('link1',58)" onmouseout="_out('link1',0)">特別編「未定」</A><BR>
+
+
+
+</td>
+
+<TD>
+<A HREF="scenario/GG44FIS.html" onmouseover="_in('link1',44)" onmouseout="_out('link1',0)">第44話「海上の死闘」</A><BR>
+
+<A HREF="scenario/GG45ovt.html" onmouseover="_in('link1',45)" onmouseout="_out('link1',0)">第45話「一騎当千」</A><BR>
+
+<A HREF="scenario/GG46FEM.html" onmouseover="_in('link1',46)" onmouseout="_out('link1',0)">第46話「揺れ動く世界を」</A><BR>
+
+<A HREF="scenario/GG47ton.html" onmouseover="_in('link1',47)" onmouseout="_out('link1',0)">第47話「任務と 正義と」</A><BR>
+
+<A HREF="scenario/GG48SR.html" onmouseover="_in('link1',48)" onmouseout="_out('link1',0)">第48話「残された道」</A><BR>
+
+<A HREF="scenario/GG49tft.html" onmouseover="_in('link1',49)" onmouseout="_out('link1',0)">第49話「命の音が聴こえる」</A><BR>
+
+<A HREF="scenario.html" onmouseover="_in('link1',50)" onmouseout="_out('link1',0)">第50話「未定」</A><BR>
+
+<A HREF="scenario.html" onmouseover="_in('link1',51)" onmouseout="_out('link1',0)">第51話「未定」</A><BR>
+
+<A HREF="scenario.html" onmouseover="_in('link1',52)" onmouseout="_out('link1',0)">最終話「未定」</A><BR>
+
+
+</TD>
+
+
+
+
+
+
+</B>
+</TD></TR></TABLE>
+
+
+
+
+
+<HR SIZE="1" WIDTH="540" NOSHADE>
+<BR><BR>
+<TABLE BGCOLOR="SILVER" CELLPADDING="10" CELLSPACING="0" WIDTH="85%"><TR><TD><CENTER>
+<FONT SIZE="3"><B><A HREF="index.html"><FONT COLOR="RED">◆◆　ＨＯＭＥ　◆◆</FONT></A>　　　<A HREF="scenario.html"><FONT COLOR="RED">◆◆　ＬＩＳＴ　◆◆</FONT></A>　　　<A HREF="javascript:history.back(-1)"><FONT COLOR="RED">◆◆　ＢＡＣＫ　◆◆</FONT></A></CENTER></B></FONT>
+</TD></TR></TABLE>
+<BR><BR><BR><BR>
+
+</CENTER>
+<!-- St-HP-F -->
+
+ <div id="popup-container"></div>
+ <!-- <script>
+    (function() {
+    const STORAGE_KEY = 'popupDismissed';
+    const excludedDomain = 'www.fc2web.com';
+    if (
+        localStorage.getItem(STORAGE_KEY) === 'true' ||
+        window.location.hostname === excludedDomain
+    ) {
+        return;
+    }
+    const container = document.getElementById('popup-container');
+    const shadow = container.attachShadow({ mode: 'open' });
+
+    shadow.innerHTML = `
+        <style>
+        .overlay {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: start;
+            justify-content: center;
+            z-index: 9999;
+        }
+        .popup {
+			color:#3d3d3d;
+            font-size: 12px;
+            background: white;
+            padding: 1em;
+            border-radius: 10px;
+            max-width: 450px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+            font-family: sans-serif;
+        }
+        .popup label {
+            color: #636363;
+            display: block;
+            margin-top: 1em;
+            font-size: 0.9em;
+        }
+        .popup button {
+            margin-top: 1em;
+            padding: 0.5em 1.5em;
+            border: none;
+            background: #007bff;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .popup button:hover {
+            background: #0056b3;
+        }
+        </style>
+        <div class="overlay">
+        <div class="popup">
+            <p>
+<h4>サービス終了のお知らせ</h4>
+FC2WEB は 2025年6月30日 (月) をもって、<br>
+サービスを終了とさせていただくこととなりました。<br>
+これまでのご愛顧に対し、深くお礼申しあげます。<br>
+詳しくは <a href="http://www.fc2web.com/" target="_blank" rel="noopener">FC2WEBポータル</a>をご確認ください。
+            </p>
+            <label><input type="checkbox" id="dont-show"> 今後このお知らせを表示しない</label>
+            <button id="close-btn">閉じる</button>
+        </div>
+        </div>
+    `;
+
+    const closeBtn = shadow.getElementById('close-btn');
+    const checkbox = shadow.getElementById('dont-show');
+
+    closeBtn.addEventListener('click', () => {
+        if (checkbox.checked) {
+        localStorage.setItem(STORAGE_KEY, 'true');
+        }
+        container.remove();
+    });
+    })();
+</script> -->
+
+
+
+<table cellSpacing=0 cellPadding=0 width="100%" bgColor=#FFFFFF border=0>
+<tr>
+<td width="30" valign="baseline"><a href="http://fc2.com/" target="_blank"><SPAN STYLE=" BACKGROUND: pink"><span style="font-size:11pt;" ><strong>SEO</strong></span></span></A></td>
+<td width="450" valign="bottom"> <script language="JavaScript" src="http://textad.net:10001/cgi-bin/manager.cgi?category_id=0&i=1" charset="shit_jis"></SCRIPT>
+<noscript>
+<a href="http://bbs.fc2.com/" target="_blank"><b><font color="#0000FF">掲示板</font></b></a>
+</noscript></td>
+<td align=right valign="bottom" noWrap style="font-size:12px";overflow:hidden;>[PR] <a href="https://blog.fc2.com/" target="_blank">爆速!無料ブログ</a> <a href="https://web.fc2.com/" target="_blank">無料ホームページ開設</a> <a href="https://live.fc2.com/">無料ライブ放送</a></td>
+</tr><tr><td colSpan=4 height=1></td></tr>
+</table>
+
+
+<img src="http://media.fc2.com/counter_img.php?id=59">
+
+<!-- En-HP-F --></body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</HTML>                                                                               

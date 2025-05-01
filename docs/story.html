@@ -1,0 +1,338 @@
+<title>
+【物語】</title>
+</head>
+<body bgcolor=#000000 text="#CCCCCC" link=#ff0000 alink=#ffffcc vlink=#00ffff>
+<!-- St-HP-H -->
+
+ 
+
+<!-- En-HP-H -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script language="JavaScript">
+<!-- Space Trip 2 - Kurt Grigg - http://website.lineone.net/‾kurt.grigg/javascript
+n4=(document.layers);
+n6=(document.getElementById&&!document.all);
+ie=(document.all);
+
+//Number of stars. Netscape 6 struggles again zzzz......  
+//Slows down even more if scroll bars are visible? Strange Browser.
+n=(n6)?15:20;
+
+d=(n4||ie)?'document.':'document.getElementById("';
+a=(n4||n6)?'':'all.';
+r=(n6)?'")':'';
+s=(n4)?'':'.style';
+
+for (i=0; i < n; i++){
+if (ie||n6)
+document.write('<div id="stars'+i+'" style="position:absolute;width:1px;height:1px;background:#000000;font-size:1px"></div>');
+if (n4)
+document.write("<layer name='stars"+i+"' top=0 left=0 bgcolor=#000000 width=1 height=1></layer>");
+}
+
+var h,w,cy,cx;
+function screenxy(){
+h=(ie)?document.body.clientHeight:window.innerHeight;
+w=(ie)?document.body.clientWidth:window.innerWidth;
+cy=Math.floor((h/2));
+cx=Math.floor((w/2));
+}
+screenxy();
+window.onresize=screenxy;
+
+y=new Array();
+x=new Array();
+iy=new Array();
+ix=new Array();
+dir=new Array();
+v=new Array();
+vr=new Array();
+ds=new Array();
+ex=new Array();
+c=new Array();
+
+//Centre stars only!
+pos=new Array();
+hex=new Array('#000000','#111111','#222222','#333333','#444444','#555555','#666666'
+,'#777777','#888888','#999999','#aaaaaa','#bbbbbb','#cccccc','#dddddd','#eeeeee','#ffffff')
+
+//Initial.
+for (i=0; i < n; i++){
+iy[i]=Math.random()*h;
+ix[i]=Math.random()*w; 
+y[i]=iy[i];
+x[i]=ix[i];
+v[i]=0.3;
+vr[i]=v[i];
+ex[i]=0;
+pos[i]=0;
+c[i]=false;
+}
+
+function fly(){
+sy=(ie)?document.body.scrollTop:window.pageYOffset;
+sx=(ie)?document.body.scrollLeft:window.pageXOffset;
+
+for (i=0; i < n; i++){
+var divs=eval(d+a+"stars"+i+r+s);
+
+//Angle between stars and screen centre.
+ay=y[i]-cy;
+ax=x[i]-cx;
+dir[i]=Math.atan2(ay,ax)*180/Math.PI;
+
+//Distance between stars and screen centre.
+dx=cy-y[i];
+dy=cx-x[i];
+ds[i]=Math.sqrt(dy*dy+dx*dx);
+
+v[i]+=ex[i];
+
+if (ds[i] >= h/4) ex[i]+=0.02;
+if ((ds[i] >= h/20) && (ds[i] < h/4)) ex[i]+=0.04;
+
+//Centre stars only!
+if (ds[i] <= h/20)c[i]=true;
+if (c[i]){
+if (pos[i] < hex.length-1) pos[i]++;
+(!n4)?divs.background=hex[pos[i]]:divs.bgColor=hex[pos[i]];
+if (pos[i] == hex.length-1) ex[i]+=0.5;
+}
+
+
+if (!c[i])
+{
+if (v[i] > 1 && v[i] < 2) (!n4)?divs.background='#333333':divs.bgColor='#333333';
+else if (v[i] >= 2 && v[i] < 3) (!n4)?divs.background='#555555':divs.bgColor='#555555';
+else if (v[i] >= 3 && v[i] < 4) (!n4)?divs.background='#888888':divs.bgColor='#888888';
+else if (v[i] >= 4 && v[i] < 5) (!n4)?divs.background='#aaaaaa':divs.bgColor='#aaaaaa';
+else if (v[i] >= 5 && v[i] < 6) (!n4)?divs.background='#cccccc':divs.bgColor='#cccccc';
+else if (v[i] >= 6 && v[i] < 7) (!n4)?divs.background='#dddddd':divs.bgColor='#dddddd';
+else if (v[i] >= 7 && v[i] < 10) (!n4)?divs.background='#ffffff':divs.bgColor='#ffffff';
+}
+
+if (v[i] > 13){
+ if (!n4){divs.fontSize=2;divs.height=2;divs.width=2;}
+ else{divs.clip.height=2;divs.clip.width=2;}
+}
+
+if (v[i] > 30){
+ if (!n4){divs.fontSize=3;divs.height=3;divs.width=3}
+ else{divs.clip.height=3;divs.clip.width=3}
+}
+
+y[i]+=v[i]*Math.sin(dir[i]*Math.PI/180);
+x[i]+=v[i]*Math.cos(dir[i]*Math.PI/180);
+
+if (y[i] < 0 || y[i] > h-v[i] || x[i] < 0 || x[i] > w-v[i]){ 
+iy[i]=(h/2-cy/2)+Math.random()*cy;
+ix[i]=(w/2-cx/2)+Math.random()*cx;
+y[i]=iy[i];
+x[i]=ix[i];
+v[i]=(ds[i] < 20)?0:0.03;
+ex[i]=0.05;
+pos[i]=0;
+c[i]=false;
+if (!n4){divs.background='#000000';divs.fontSize=1;divs.height=1;divs.width=1} 
+else{divs.bgColor='#000000';divs.clip.height=1;divs.clip.width=1;}
+}
+divs.top=y[i]+sy;
+divs.left=x[i]+sx;
+}
+setTimeout('fly()',10);
+}
+fly();
+// --></script>
+
+
+
+<CENTER>
+<FONT SIZE="5" COLOR="YELLOW">プロローグ</FONT>
+<P><P>
+
+
+
+<TABLE WIDTH="90%" CELLPADDING="20"><TR><TD BGCOLOR="black">
+<P><HR><P>
+<FONT COLOR="WHITE"><B>
+　そう遠くない未来、人類は、宇宙に移り住むようになっていた。<BR>
+　しかし、人の歴史は争いの歴史と言っても過言ではない。<BR>
+　宇宙開拓という偉業は、同時に、地球に住むものと宇宙に住むものの間に確執を生み、幾度となく争いを引き起こす。<BR>
+　終戦の都度、今度こそ恒久的な平和が訪れると囁かれ、開戦の度に、その希望は打ち砕かれる。<BR>
+<BR>
+　そんな争いの宇宙史が、２５０年。<BR>
+　争いの果てに、地球議会から独立自治権を勝ち取った宇宙移民者群セツルメント。<BR>
+　だが、ようやく得た平和の中に麻痺し、やがては力あるもの為の特権主義社会を生み出し、自らが小セツルメントへの圧政を強いるようになる。<BR>
+　各地で起きたセツルメント内紛争は、体制側と、反体制側に別れてその共同戦線を張り、セツルメント間による強大な戦禍を巻き起こしつつあった。<BR>
+　そして、その火は、地球議会にも飛び火する様相を見せる。
+　それは、またしても訪れようとする大戦の予感であった。<BR>
+<BR>
+　そんな中、反体制派勢力に加担する私設軍隊「グレイゾン」が、その活動を公の場にしようとしていた。<BR>
+<BR>
+
+</FONT></B>
+<BR><BR>
+ <P><HR><P>
+</TD></TR></TABLE>
+</CENTER> 
+ 
+ 
+ 
+
+  
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- St-HP-F -->
+
+ <div id="popup-container"></div>
+<!-- <script>
+    (function() {
+    const STORAGE_KEY = 'popupDismissed';
+    const excludedDomain = 'www.fc2web.com';
+    if (
+        localStorage.getItem(STORAGE_KEY) === 'true' ||
+        window.location.hostname === excludedDomain
+    ) {
+        return;
+    }
+    const container = document.getElementById('popup-container');
+    const shadow = container.attachShadow({ mode: 'open' });
+
+    shadow.innerHTML = `
+        <style>
+        .overlay {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: start;
+            justify-content: center;
+            z-index: 9999;
+        }
+        .popup {
+			color:#3d3d3d;
+            font-size: 12px;
+            background: white;
+            padding: 1em;
+            border-radius: 10px;
+            max-width: 450px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+            font-family: sans-serif;
+        }
+        .popup label {
+            color: #636363;
+            display: block;
+            margin-top: 1em;
+            font-size: 0.9em;
+        }
+        .popup button {
+            margin-top: 1em;
+            padding: 0.5em 1.5em;
+            border: none;
+            background: #007bff;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .popup button:hover {
+            background: #0056b3;
+        }
+        </style>
+        <div class="overlay">
+        <div class="popup">
+            <p>
+<h4>サービス終了のお知らせ</h4>
+FC2WEB は 2025年6月30日 (月) をもって、<br>
+サービスを終了とさせていただくこととなりました。<br>
+これまでのご愛顧に対し、深くお礼申しあげます。<br>
+詳しくは <a href="http://www.fc2web.com/" target="_blank" rel="noopener">FC2WEBポータル</a>をご確認ください。
+            </p>
+            <label><input type="checkbox" id="dont-show"> 今後このお知らせを表示しない</label>
+            <button id="close-btn">閉じる</button>
+        </div>
+        </div>
+    `;
+
+    const closeBtn = shadow.getElementById('close-btn');
+    const checkbox = shadow.getElementById('dont-show');
+
+    closeBtn.addEventListener('click', () => {
+        if (checkbox.checked) {
+        localStorage.setItem(STORAGE_KEY, 'true');
+        }
+        container.remove();
+    });
+    })();
+</script> -->
+
+
+
+<table cellSpacing=0 cellPadding=0 width="100%" bgColor=#FFFFFF border=0>
+<tr>
+<td width="30" valign="baseline"><a href="http://fc2.com/" target="_blank"><SPAN STYLE=" BACKGROUND: pink"><span style="font-size:11pt;" ><strong>SEO</strong></span></span></A></td>
+<td width="450" valign="bottom"> <script language="JavaScript" src="http://textad.net:10001/cgi-bin/manager.cgi?category_id=0&i=1" charset="shit_jis"></SCRIPT>
+<noscript>
+<a href="http://bbs.fc2.com/" target="_blank"><b><font color="#0000FF">掲示板</font></b></a>
+</noscript></td>
+<td align=right valign="bottom" noWrap style="font-size:12px";overflow:hidden;>[PR] <a href="https://blog.fc2.com/" target="_blank">爆速!無料ブログ</a> <a href="https://web.fc2.com/" target="_blank">無料ホームページ開設</a> <a href="https://live.fc2.com/">無料ライブ放送</a></td>
+</tr><tr><td colSpan=4 height=1></td></tr>
+</table>
+
+
+<img src="http://media.fc2.com/counter_img.php?id=59">
+
+<!-- En-HP-F -->
